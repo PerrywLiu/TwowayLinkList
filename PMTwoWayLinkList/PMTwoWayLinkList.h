@@ -42,6 +42,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 返回节点数量
 - (NSUInteger)countOfNode;
 
+/// 清零
+- (void)clear;
+
 - (void)print;
 
 

@@ -7,6 +7,7 @@
 //
 
 #import "PMTwoWayLinkList.h"
+#import "PMNode.h"
 
 #define ELEMENT_NOT_FOUND -1
 
@@ -195,6 +196,22 @@
         return NO;
     }
     return YES;
+}
+
+- (void)clear
+{
+    while (_size > 0) {
+        [self removeNodeAtIndex:0];
+    }
+    
+    if (_size == 0) {
+        NSLog(@"链表清零");
+    }
+    else
+    {
+        NSLog(@"清零失败");
+        [self print];
+    }
 }
 
 @end
